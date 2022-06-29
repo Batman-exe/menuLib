@@ -138,11 +138,22 @@
 
 .help-container {
     height: 38%;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #1A1818;
 }
 
 .help-item {
     width: 100%;
     height: fit-content;
-    position: absolute;
+}
+
+@media screen and (max-width:768px){ 
+    .help-container {
+        height: 38%;
+        width: 100%;
+        position: relative;
+        background: #1A1818;
+    }
 }
