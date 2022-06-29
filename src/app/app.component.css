@@ -1,0 +1,169 @@
+.sidenavContainer {
+    height: calc(100vh - 77px);
+}
+
+.m-sidenav {
+    width: 20%;
+    min-height: 100%;
+    max-height: auto;
+    background-color: #1A1818;
+    transition: all 0.12s ease-in-out 0s;
+}
+
+.m-sidenav-small {
+    width: 4.8%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.m-sidenav-over {
+    width: 20%;
+    min-height: 100%;
+    max-height: auto;
+    background-color: #1A1818;
+    transition: all 0.12s ease-in-out 0s;
+    overflow: hidden !important;
+}
+
+.m-sidenav-items{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.m-sidenav-items::-webkit-scrollbar{
+    width: 0;
+}
+
+.m-sn-content {
+    margin-left: 4.8% !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.m-sn-content-small {
+    margin-left: 20% !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.m-sn-content-over{
+    margin-left: 4.8% !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.m-sidenav::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (max-width:768px){ 
+
+    .m-sidenav {
+        width: 20%;
+        background-color: transparent;
+        transition: all 0.12s ease-in-out 0s;
+    }
+
+    .m-sidenav-small {
+        width: 0%;
+    }
+    
+    .m-sidenav-opened {
+        width: 32.56%;
+        background-color: transparent;
+        transition: all 0.12s ease-in-out 0s;
+        overflow: hidden !important;
+    }
+
+    .m-sidenav-items{
+        height: 684px;
+        background-color: #1A1818;
+    }
+
+    .m-sn-content-small{
+        margin-left: 4.8% !important;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width:426px){ 
+
+    .m-sidenav {
+        width: 100%;
+        background-color: #1A1818;
+        transition: all 0.12s ease-in-out 0s;
+    }
+
+    .m-sidenav-small {
+        width: 0%;
+    }
+    
+    .m-sidenav-opened {
+        width: 100%;
+        background-color: #1A1818;
+        transition: all 0.12s ease-in-out 0s;
+        overflow: hidden !important;
+    }
+
+    .m-sidenav-items{
+        height: calc(100vh - 77px);
+        background-color: #1A1818;
+    }
+
+    .m-sn-content-small{
+        margin-left: 4.8% !important;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+/*Pruebas==================================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+hr {
+    margin: 0;
+}
+
+.btn-menu {
+    width: 4.8%;
+    background-color: #FFFFFF;
+    border-width: 0;
+}
+
+.buscador {
+    display: inline-flex;
+    background-color: #F2F2F2;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.buscador:hover {
+    background-color: #D0D0D0;
+}
+
+#buscador{
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    vertical-align: middle;
+    width: 77%;
+    height: 50px;
+    justify-content: space-around;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif ';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6A6B6B;
+    outline: none;
+}
+

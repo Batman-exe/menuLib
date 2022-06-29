@@ -1,0 +1,27 @@
+<div *ngIf="!small" class="help">
+    <div [ngClass]="{'help-card': !small}">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8078_5411)">
+                <circle cx="20" cy="20" r="20" fill="#C8C9CC" />
+            </g>
+            <path
+                d="M35.9998 18.6665C28.6478 18.6665 22.6665 24.6478 22.6665 31.9998C22.6665 39.3518 28.6478 45.3332 35.9998 45.3332C43.3518 45.3332 49.3332 39.3518 49.3332 31.9998C49.3332 24.6478 43.3518 18.6665 35.9998 18.6665ZM37.3332 39.9998H34.6665V37.3332H37.3332V39.9998ZM38.6345 33.4865C38.3732 33.6972 38.1212 33.8985 37.9212 34.0985C37.3772 34.6412 37.3345 35.1345 37.3332 35.1558V35.3332H34.6665V35.1105C34.6665 34.9532 34.7052 33.5412 36.0345 32.2118C36.2945 31.9518 36.6172 31.6878 36.9558 31.4132C37.9345 30.6198 38.5772 30.0412 38.5772 29.2438C38.5617 28.5703 38.2832 27.9295 37.8013 27.4587C37.3193 26.9878 36.6723 26.7243 35.9985 26.7245C35.3248 26.7246 34.6778 26.9885 34.1962 27.4596C33.7145 27.9307 33.4363 28.5716 33.4212 29.2452H30.7545C30.7545 26.3532 33.1078 23.9998 35.9998 23.9998C38.8918 23.9998 41.2452 26.3532 41.2452 29.2452C41.2452 31.3745 39.6732 32.6452 38.6345 33.4865Z"
+                fill="white" transform="translate(-16,-12.33)"/>
+            <defs>
+                <filter id="filter0_d_8078_5411" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="8" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8078_5411" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8078_5411" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+        <p class="info">Necesita ayuda</p>
+        <button class="help-btn">Ir al centro de ayuda</button>
+    </div>
+</div>

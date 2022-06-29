@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.help{
+    height: fit-content;
+}
+
+.help-card {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9.52%;
+    padding-left: 9.52%;
+    padding-right: 9.52%;
+
+    position: static;
+    bottom: 0;
+    width: 68%;
+    height: 100%;
+    left: 16px;
+    top: 40px;
+
+    /* Grises/800 */
+
+    background: #333333;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 7.34% 0 7.34% 7.34%;
+}
+
+.help > .help-card > svg {
+    margin-top: 12.82%;
+}
+
+.info {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10.81% 0 8.97% 0;
+    
+}
+
+.help-btn {
+    padding-bottom: 7.92%;
+    padding-top: 8.63%;
+    padding-left: 8.63%;
+    padding-right: 8.63%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+    color: #A7241E;
+
+    background-color: #FFFFFF;
+    border:2px solid #A7241E;
+    border-radius: 4px;
+}

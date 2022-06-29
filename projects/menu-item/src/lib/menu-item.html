@@ -1,0 +1,25 @@
+<div *ngIf="!help">
+    <div class="item{{small?'-small':''}} {{opened?'item-opened':''}}" (click)="openSubitems()">
+        <menu-icon class="icon"></menu-icon>
+        <div *ngIf="!small" class="row-auto-* content">
+            <div class="col-auto-* text-container">
+                <p class="item-text">{{text}}</p>
+            </div>
+            <div class="col-auto-* chevron">
+                <svg class="arrow-{{opened?'opened':'closed'}}" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#6A6B6B" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <ul *ngIf="opened && !small" id="subitems">
+        <subitem [subitem]="subitems[0]" (click)="changeSubitemsState(0)"></subitem>
+        <subitem [subitem]="subitems[1]" (click)="changeSubitemsState(1)"></subitem>
+        <subitem [subitem]="subitems[2]" (click)="changeSubitemsState(2)"></subitem>
+    </ul>
+</div>
+
+<div *ngIf="help" class="help-container">
+    <help-item class="help-item" [small]="small"></help-item>
+</div>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.item {
+    /* Property 1=Default */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background: #1A1818;
+}
+
+.item-small {
+    /* Property 1=Default */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background: #1A1818;
+}
+
+.item-opened{
+    background: #333333;
+    position: relative;
+}
+
+.item-small.item-opened {
+    background-color: #DA211C;
+}
+
+.item:hover {
+    background: #333333;
+}
+
+.item:active {
+    background: #DA211C;
+}
+
+.item-small:hover {
+    background: #333333;
+}
+
+.item-hover:active {
+    background: #DA211C;
+}
+
+.item > .icon {
+    padding-left: 6.4%;
+}
+
+.item-small > .icon {
+    padding-left: 27%;
+}
+
+.content {
+    position: relative;
+    display: inline-flex;
+    width: 200%;
+    height: 100%;
+}
+
+.text-container {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin-left: 3.83%;
+}
+
+.item-text {    
+    width: fit-content;
+    height: auto;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+
+    /* Body 1/regular/roboto */
+
+    font-family: 'Roboto', 'sans-serif ';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Grises/100 */
+
+    color: #F2F2F2;
+}
+
+.chevron {
+    position: absolute;
+    right: 6.4%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: fit-content;
+    height: 100%;
+}
+
+.arrow-closed path {
+    d: path("M7.41 8.58984L12 13.1698L16.59 8.58984L18 9.99984L12 15.9998L6 9.99984L7.41 8.58984Z");
+}
+
+
+.arrow-opened path {
+    d: path("M7.41 15.41L12 10.83L16.59 15.41L18 14L12 8L6 14L7.41 15.41ZM7.41 15.41L12 10.83L16.59 15.41L18 14L12 8L6 14L7.41 15.41Z");
+}
+
+.item:active> .content > .chevron > svg > path {
+    fill: #FFFFFF;  
+}
+
+.item-opened > .content > .chevron > svg > path {
+    fill: #FFFFFF;  
+}
+
+#subitems{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-container {
+    height: 38%;
+    position: relative;
+}
+
+.help-item {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
